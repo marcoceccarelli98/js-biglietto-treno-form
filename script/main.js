@@ -55,6 +55,8 @@ buttonGenerate.addEventListener('click', function () {
 
         let ticketType = 'Biglietto Standard';
         const cpCode = Math.floor(Math.random() * 99999);
+        const carriageNumber = Math.floor(Math.random() * 15) + 1;
+
 
         // - Get value from name input //kmToTravel
         userName = elementNameInput.value;
@@ -90,6 +92,7 @@ buttonGenerate.addEventListener('click', function () {
         document.getElementById('name').innerHTML = userName;
         document.getElementById('offer').innerHTML = ticketType;
         document.getElementById('cp').innerHTML = cpCode;
+        document.getElementById('carriage').innerHTML = carriageNumber;
         document.getElementById('totalprice').innerHTML = (Math.round(totalPrice * 100) / 100 + ' €');
 
 
