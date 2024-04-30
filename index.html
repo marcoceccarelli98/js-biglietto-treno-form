@@ -7,7 +7,9 @@
     <title>Biglietto Treno</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body class="vh-100 d-flex overflow-y-scroll">
     <div class="container m-auto">
@@ -71,24 +73,24 @@
                 </div>
             </div>
             <div id="ticket" class="col-12 d-none">
-                <div class="d-flex text-center p-3 mb-5 bg-primary rounded">
-                    <div class="content-name py-3 border w-25 bg-secondary text-white">
+                <div class="d-flex flex-column flex-md-row text-center p-3 mb-5 bg-primary rounded">
+                    <div class="ticket-content py-3 border bg-secondary text-white">
                         <h3 class="fw-semibold">Nome</h3>
                         <h3 id="name" class="fw-bold pt-3">NomeCognome</h3>
                     </div>
-                    <div class="offer py-3 border w-25">
+                    <div class="ticket-content py-3 border">
                         <h3 class="fw-semibold">Offerta</h3>
                         <h3 id="offer" class="fw-bold pt-3">Offer</h3>
                     </div>
-                    <div class="carriage py-3 border w-25">
+                    <div class="ticket-content py-3 border">
                         <h3 class="fw-semibold">Carrozza</h3>
                         <h3 id="carriage" class="fw-bold pt-3">0</h3>
                     </div>
-                    <div class="code py-3 border w-25">
+                    <div class="ticket-content py-3 border">
                         <h3 class="fw-semibold">Codice CP</h3>
                         <h3 id="cp" class="fw-bold pt-3">CodiceCP</h3>
                     </div>
-                    <div class="total py-3 border w-25">
+                    <div class="ticket-content py-3 border">
                         <h3 class="fw-semibold">Prezzo</h3>
                         <h3 id="totalprice" class="fw-bold pt-3">Total</h3>
                     </div>
